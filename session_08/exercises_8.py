@@ -8,23 +8,49 @@
 
 ## Section A
 # 1. Read the file 'jabberwocky.txt' and print its content to the screen.
+f = open("text_files/jabberwocky.txt","r")
+print(f.read())
 
 
 
 # 2. Read the file 'austen.txt' and print the amount of lines in the file.
+f = open("text_files/austen.txt","r")
+total = 0 
+
+for x in f:
+  total += 1
+
+print(total)
 
 
 
 # 3. Each line of the file 'numbers.txt' contains a number, write a script to add up all the values in the file.
 
+f = open("text_files/numbers.txt","r")
 
+total = 0
+for x in f:
+  total += int(x)
+
+print(total)
 
 
 # <---------------------------------------------------------------------------------------------->
 
 ## Section B
 # 1. Ask the user to enter their name and append this to a file called 'register.txt'.
+f = open("text_files/register.txt", "w")
+name = input("please input your name: ")
+f.write(name)
+f.close()
 
+
+# 2. Create a new file called 'even.txt' that contains only the even numbers from the file 'numbers.txt'.
+f = open("even.txt", "w")
+for x in open("text_files/numbers.txt", "r"): 
+  if int(x) % 2 ==0:
+    f.write(str(x) + "\n")
+f.close()
 
 
 # 2. Create a new file called 'even.txt' that contains only the even numbers from the file 'numbers.txt'.
