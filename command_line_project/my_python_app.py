@@ -1,4 +1,4 @@
-#Guessing app for children between the ages of 3 - 5
+#Game for children between the ages of 3 - 5
 #Children can enter either an alphabet (game 1) or a number (game 2) and the app will output results of whether the entered value is a consonant for vowel. If its a number, the app will output results of whether the number is odd or even. 
 #I added game 3 since I did not use an import function in either game 1 or 2. 
 
